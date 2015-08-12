@@ -1,4 +1,20 @@
 .link_theme_blue
 {
-    color: #6fa7e8;
+    color: #4a90e2;
+    cursor: pointer;
+    transition: color 0.15s ease-out;
+    text-decoration: none;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+
+    &:hover
+    {
+        color: #23527c;
+        text-decoration: underline;
+    }
+
+    &.link_disabled
+    {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
 }

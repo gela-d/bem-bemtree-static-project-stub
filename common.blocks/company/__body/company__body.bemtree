@@ -1,0 +1,5 @@
+block('company').content()(
+    elem('body').content()(function(){
+        return 'aaa'
+    })
+)

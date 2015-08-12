@@ -1,9 +1,9 @@
-block('card').content()(
+block('company').content()(
 
     elem('header').content()(function(){
         return [
             {
-                elem: 'perm-card',
+                elem: 'perm-company',
                 content: '12343'
             },
             {
@@ -14,10 +14,10 @@ block('card').content()(
                 elem: 'last-check',
                 content: '2015-10-20 16:66'
             },
-            { elem: 'card-link' },
+            { elem: 'company-link' },
             {
                 block : 'select',
-                mix: { block: 'card', elem: 'lang-select' },
+                mix: { block: 'company', elem: 'lang-select' },
                 mods: { mode : 'radio', theme : 'islands', size : 's' },
                 val: 1,
                 options: [
@@ -28,7 +28,7 @@ block('card').content()(
         ];
     }),
 
-    elem('perm-card').content()(function(){
+    elem('perm-company').content()(function(){
         return [
             {
                 elem: 'header-key',
@@ -58,7 +58,7 @@ block('card').content()(
         ]
     }),
 
-    elem('card-link').content()(function(){
+    elem('company-link').content()(function(){
         return {
             block: 'link',
             mods: { theme: 'blue' },

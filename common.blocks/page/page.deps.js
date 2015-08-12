@@ -1,4 +1,4 @@
 ({
     mustDeps: ['i-bem'],
-    shouldDeps: ['header', 'card', 'copyright']
+    shouldDeps: ['header', 'company', 'copyright']
 })
