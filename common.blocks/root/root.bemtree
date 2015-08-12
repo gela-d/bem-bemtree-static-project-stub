@@ -1,7 +1,7 @@
 block('root').def()(function() {
     return applyCtx({
         block: 'page',
-        title: 'TODO',
+        title: 'Страница карточки организации',
         head: [
             { elem: 'css', url: '_index.css' }
         ],

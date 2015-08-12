@@ -1,0 +1,6 @@
+block('card').content()(function(){
+    return [
+        { elem: 'header' },
+        { elem: 'body' }
+    ]
+});

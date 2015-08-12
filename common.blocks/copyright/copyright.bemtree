@@ -1,0 +1,12 @@
+block('copyright').content()(function(){
+    return [
+        (new Date()).getFullYear(),
+        '&nbsp;&copy;,&nbsp;',
+        {
+            block: 'link',
+            mods: { theme : 'islands' },
+            url: 'yandex.ru',
+            content: 'Яндекс'
+        }
+    ]
+})

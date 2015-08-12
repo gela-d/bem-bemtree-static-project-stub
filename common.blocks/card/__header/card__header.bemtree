@@ -1,0 +1,69 @@
+block('card').content()(
+
+    elem('header').content()(function(){
+        return [
+            {
+                elem: 'perm-card',
+                content: '12343'
+            },
+            {
+                elem: 'perm-claster',
+                content: '432476892'
+            },
+            {
+                elem: 'last-check',
+                content: '2015-10-20 16:66'
+            },
+            { elem: 'card-link' },
+            {
+                block : 'select',
+                mix: { block: 'card', elem: 'lang-select' },
+                mods: { mode : 'radio', theme : 'islands', size : 's' },
+                val: 1,
+                options: [
+                    { val: 1, text : 'по-русски' },
+                    { val: 2, text : 'не по-русски' }
+                ]
+            }
+        ];
+    }),
+
+    elem('perm-card').content()(function(){
+        return [
+            {
+                elem: 'header-key',
+                content: 'пермалинк карточки:&nbsp;'
+            },
+            applyNext()
+        ]
+    }),
+
+    elem('perm-claster').content()(function(){
+        return [
+            {
+                elem: 'header-key',
+                content: 'пермалинк кластера:&nbsp;'
+            },
+            applyNext()
+        ]
+    }),
+
+    elem('last-check').content()(function(){
+        return [
+            {
+                elem: 'header-key',
+                content: 'последняя проверка:&nbsp;'
+            },
+            applyNext()
+        ]
+    }),
+
+    elem('card-link').content()(function(){
+        return {
+            block: 'link',
+            mods: { theme: 'blue' },
+            url: '#',
+            content: 'карточка в Backa'
+        }
+    })
+);
