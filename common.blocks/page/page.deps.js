@@ -1,4 +1,4 @@
 ({
     mustDeps: ['i-bem'],
-    shouldDeps: ['header', 'main', 'footer']
+    shouldDeps: ['search-header', 'company-card']
 })

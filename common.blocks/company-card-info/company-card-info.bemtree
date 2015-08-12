@@ -1,0 +1,63 @@
+block('company-card-info')(
+    content()(function(){
+        return [
+            { elem: 'export-id' },
+            { elem: 'cluster-id' },
+            { elem: 'last-actualized' },
+            { elem: 'old-backa' },
+            { elem: 'lang-switcher' }
+        ]
+    }),
+
+    elem('export-id').content()(function(){
+        return [
+            {
+                elem: 'attribute-name',
+                content: 'пермалинк карточки:&nbsp;'
+            },
+            '123432'
+        ]
+    }),
+
+    elem('cluster-id').content()(function(){
+        return [
+            {
+                elem: 'attribute-name',
+                content: 'пермалинк кластера:&nbsp;'
+            },
+            '3456789009876'
+        ]
+    }),
+
+    elem('last-actualized').content()(function(){
+        return [
+            {
+                elem: 'attribute-name',
+                content: 'последняя проверка:&nbsp;'
+            },
+            '2015-05-11 15:22'
+        ]
+    }),
+
+    elem('old-backa').content()(function(){
+        return {
+            block: 'link',
+            mods: { theme: 'blue' },
+            url: '#',
+            content: 'карточка в Backa'
+        }
+    }),
+
+    elem('lang-switcher').content()(function(){
+        return applyCtx({
+            block : 'select',
+            mix: { block: 'company', elem: 'lang-select' },
+            mods: { mode : 'radio', theme : 'islands', size : 's' },
+            val: 1,
+            options: [
+                { val: 1, text : 'по-русски' },
+                { val: 2, text : 'не по-русски' }
+            ]
+        });
+    })
+);

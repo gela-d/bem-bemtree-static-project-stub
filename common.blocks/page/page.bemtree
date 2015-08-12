@@ -1,13 +1,10 @@
 block('page').content()(function() {
     return [
+        //{
+        //    block: 'search-header'
+        //},
         {
-            block: 'header'
-        },
-        {
-            block: 'main'
-        },
-        {
-            block: 'footer'
+            block: 'company-card'
         }
     ];
 });
